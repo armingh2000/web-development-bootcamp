@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+\title{
+\vspace{-3em}
+\begin{tcolorbox}
+\Huge\sffamily The Anatomy of an HTML Tag
+\end{tcolorbox}
+\vspace{-3em}
+}
+
+\date{}
+
+\usepackage{background}
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{red}
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+\SetBgHshift{-2.3cm}
+\SetBgVshift{0cm}
+\usepackage[margin=2cm]{geometry}
+
+\makeatletter
+\def\cornell{\@ifnextchar[{\@with}{\@without}}
+\def\@with[#1]#2#3{
+\begin{tcolorbox}[enhanced,colback=gray,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+opacityframe=0,opacityback=.3,opacitybacktitle=1, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt},
+title=#1
+]
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
+width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
+\tcblower
+\sffamily
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
+#3
+\end{tcolorbox}
+\end{tcolorbox}
+}
+\def\@without#1#2{
+\begin{tcolorbox}[enhanced,colback=white!15,colframe=white,fonttitle=\bfseries,sidebyside=true, nobeforeafter,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
+opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
+segmentation style={black!55,solid,opacity=0,line width=3pt}
+]
+
+\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
+width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
+\tcblower
+\sffamily
+\begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
+#2
+\end{tcolorbox}
+\end{tcolorbox}
+}
+\makeatother
+
+\parindent=0pt
+
+\begin{document}
+\maketitle
+\SetBgContents{\rule[0em]{4pt}{\textheight}}
+
+\cornell{Types of Tags}
+{
+  \begin{itemize}
+    \item
+      Tags with a start tag and an end tag.\\
+      \textless START TAG\textgreater CONTENT \textless\textbackslash END TAG\textgreater
+    \item
+      Self-Closing Tags\\
+      Like: \textless br\textgreater
+  \end{itemize}
+}
+
+\cornell{How to know the tag type}{devdocs.io (documentary)}
+
+\cornell{Horizontal Line}
+{
+  \textless hr\textgreater\\
+  \textless hr size="number"\textgreater HTML element + HTML attribute
+}
+
+\cornell{Center tag}
+{
+\textless center\textgreater content \textless\textbackslash center\textgreater makes all the content in between center tags to be centered horizontally.
+}
+
+\cornell{Comments}
+{
+  \textless !\texttt{-{}-} comment \texttt{-{}-}\textgreater
+}
+\end{document}
