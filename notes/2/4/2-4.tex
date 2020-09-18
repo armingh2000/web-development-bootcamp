@@ -2,6 +2,8 @@
 \usepackage{tcolorbox}
 \usepackage{listings}
 \tcbuselibrary{skins}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 \title{
 \vspace{-3em}
@@ -24,14 +26,12 @@
 
 \makeatletter
 \newcommand{\cornell}{\@ifnextchar[{\@with}{\@without}}
-\newcommand{\@with}[3]{
+\newcommand{\@with}[4]{
 \begin{tcolorbox}[enhanced,colback=gray,colframe=black,fonttitle=\large\bfseries\sffamily,sidebyside=true, nobeforeafter,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
 opacityframe=0,opacityback=.3,opacitybacktitle=1, opacitytext=1,
 segmentation style={black!55,solid,opacity=0,line width=3pt},
-title=#1
+title=#2
 ]
-\begin{tcolorbox}[colback=red!05,colframe=red!25,sidebyside align=top,
-width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
 \tcblower
 \sffamily
 \begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
@@ -39,7 +39,7 @@ width=\textwidth,nobeforeafter]#2\end{tcolorbox}%
 \end{tcolorbox}
 \end{tcolorbox}
 }
-\newcommand{\@without}[2]{
+\newcommand{\@without}[3]{
 \begin{tcolorbox}[enhanced,colback=white!15,colframe=white,fonttitle=\bfseries,sidebyside=true, nobeforeafter,colupper=blue,sidebyside align=top, lefthand width=.3\textwidth,
 opacityframe=0,opacityback=0,opacitybacktitle=0, opacitytext=1,
 segmentation style={black!55,solid,opacity=0,line width=3pt}
@@ -50,7 +50,8 @@ width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 \tcblower
 \sffamily
 \begin{tcolorbox}[colback=blue!05,colframe=blue!10,width=\textwidth,nobeforeafter]
-#2
+#2\\
+#3
 \end{tcolorbox}
 \end{tcolorbox}
 }
@@ -64,11 +65,42 @@ width=\textwidth,nobeforeafter]#1\end{tcolorbox}%
 
 \cornell{What is index.html}{It is used by many web developers for their home page}
 
-\cornell{What is a Boilerplate}
-{
-It is a peice of code which can be used as a template in different projects. In HTML it is like:\\
-\begin{lstlisting}
-\end{lstlisting}
-}
+\newsavebox{\htmlc}
+\begin{lrbox}{\htmlc}
+  \begin{lstlisting}
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title></title>
+      </head>
+      <body>
+
+      </body>
+    </html>
+  \end{lstlisting}
+\end{lrbox}
+
+\cornell{What is a Boilerplate}{It is a peice of code which can be used as a template in different projects. In HTML it is like:}{\usebox{\htmlc}}
+
+\cornell[{TIP}{HTML Boilerplates differs according to html version}]
+
+\cornell[{SITE}{emmet.io}]
+
+\cornell{HEAD TAG}{It holds information about the webpage and tells the browser how to handle the page}
+
+\cornell{TITLE TAG}{Gives a title to the page}
+
+\cornell{META TAG}{It is a self-closing tag that has the meta data info about the web page. It's charset="utf-8" attribute, tells the browser that all of the characters of the web page, are from utf-8 characters.}
+
+\cornell{Mojibake (characters that are transformed)}{It happens when browser is trying to render the characters to a wrong charset.}
+
+\cornell[{SITE}{unicode-table.com}]
+
+\cornell[{TIP}{In html5, we are always supposed to use utf-8 charset.}]
+
+\cornell[{SITE}{mdn.com}]
+
+\cornell[{TIP}{Meta tags are often used by google crawlers to categorize a webpage. For example, the description attribute is exactly what google shows under each link when we search something.}]
 
 \end{document}
