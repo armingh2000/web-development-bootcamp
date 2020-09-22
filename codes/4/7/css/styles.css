@@ -3,6 +3,16 @@ h1 {
   font-size: 200px;
 }  
 
+/*
 img {
   background-color: lightblue;
+}
+*/
+
+.cloud {
+  background-color: lightblue;
+}
+
+.sun {
+  background-color: yellow;
 }
