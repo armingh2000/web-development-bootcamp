@@ -3,11 +3,11 @@ h1 {
   font-size: 200px;
 }  
 
-/*
-img {
-  background-color: lightblue;
+
+img:hover {
+  background-color: lightgreen;
 }
-*/
+
 
 .cloud {
   background-color: lightblue;
