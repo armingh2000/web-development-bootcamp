@@ -2,14 +2,18 @@ body {
   margin: 0;
 }
 
-.top-container {
-  background-color: #cca8e9;
-  margin-left: 0;
-  margin-right: 0;
+img {
+  width: 100%;
 }
 
 h1 {
   margin-top: 0;
+}
+
+.top-container {
+  background-color: #cca8e9;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .middle-container {
