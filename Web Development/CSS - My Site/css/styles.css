@@ -3,17 +3,19 @@ body {
 }
 
 img {
-  width: 100%;
 }
 
+
 h1 {
-  margin-top: 0;
+ margin: 0;
 }
 
 .top-container {
-  background-color: #d6e0f0;
+  background-image: linear-gradient(to right, #E3E6EC, #8d93ab);
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
+  height: 100vh;
 }
 
 .middle-container {
@@ -26,4 +28,30 @@ h1 {
   background-color: blue;
   width: 200px;
   height: 200px;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+}
+
+#html-img {
+  top: 270px;
+  left: 570px;
+}
+#css-img{
+  top: 250px;
+  left: 1070px;
+  width: 280px;
+  height: 280px;
+}
+
+#js-img {
+  top: 450px;
+  left: 825px;
+}
+
+img {
+  margin-top: 200px;
 }
