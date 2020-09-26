@@ -1,21 +1,21 @@
 body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
   text-align: center;
 }
-
-img {
-}
-
 
 h1 {
   margin: 0;
   font-family: 'Clicker Script', cursive;
+  font-size: 5rem;
 }
 
 h2, h3 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 .top-container {
@@ -54,13 +54,17 @@ h2, h3 {
   left: 825px;
 }
 
+#glasses-img {
+  height: 500px;
+}
+
 img {
   margin-top: 130px;
 }
 
 #head {
   position: relative;
-  top: 150px;
+  top: 100px;
 }
 
 .python-img {
