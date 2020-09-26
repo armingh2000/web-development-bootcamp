@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  line-height: 2;
 }
 
 h1 {
@@ -22,6 +21,8 @@ h2 {
 .prog {
   font-weight: normal;
   margin: 0;
+  position: relative;
+  top: 50px;
 }
 
 h1, h2 {
@@ -70,6 +71,7 @@ h3, a {
 
 #glasses-img {
   height: 600px;
+  margin-top: 110px;
 }
 
 .logo {
