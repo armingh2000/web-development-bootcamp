@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  line-height: 2;
 }
 
 h1 {
@@ -16,6 +17,19 @@ h2, h3 {
 
 h2 {
   font-size: 2rem;
+}
+
+.prog {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1, h2 {
+  color: #393b44;
+}
+
+h3, a {
+  color: #8d93ab;
 }
 
 .top-container {
@@ -58,8 +72,8 @@ h2 {
   height: 600px;
 }
 
-img {
-  margin-top: 80px;
+.logo {
+  margin-top: 45px;
 }
 
 #head {
@@ -81,4 +95,5 @@ img {
   width: 300px;
   height: 300px;
   border-radius: 100%;
+  margin-top: 50px;
 }
