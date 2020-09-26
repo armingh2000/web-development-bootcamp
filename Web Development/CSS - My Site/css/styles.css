@@ -39,27 +39,27 @@ h2 {
 }
 
 #html-img {
-  top: 35%;
-  left: 570px;
+  top: 450px;
+  left: 580px;
 }
 #css-img{
-  top: 33%;
+  top: 425px;
   left: 1070px;
   width: 280px;
   height: 280px;
 }
 
 #js-img {
-  top: 55%;
+  top: 600px;
   left: 825px;
 }
 
 #glasses-img {
-  height: 500px;
+  height: 600px;
 }
 
 img {
-  margin-top: 130px;
+  margin-top: 80px;
 }
 
 #head {
