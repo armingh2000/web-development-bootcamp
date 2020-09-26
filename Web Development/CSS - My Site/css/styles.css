@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  text-align: center;
 }
 
 img {
@@ -7,27 +10,26 @@ img {
 
 
 h1 {
- margin: 0;
+  margin: 0;
+  font-family: 'Clicker Script', cursive;
+}
+
+h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .top-container {
-  background-image: linear-gradient(to right, #E3E6EC, #8d93ab);
+  background-image: linear-gradient(to right, #f1f3f8, #8d93ab);
   margin-left: 0;
   margin-right: 0;
-  text-align: center;
   height: 100vh;
+  position: relative;
 }
 
 .middle-container {
-  background-color: red;
-  height: 200px;
-  width: 200px;
 }
 
 .bottom-container {
-  background-color: blue;
-  width: 200px;
-  height: 200px;
 }
 
 .logo {
@@ -37,21 +39,42 @@ h1 {
 }
 
 #html-img {
-  top: 270px;
+  top: 35%;
   left: 570px;
 }
 #css-img{
-  top: 250px;
+  top: 33%;
   left: 1070px;
   width: 280px;
   height: 280px;
 }
 
 #js-img {
-  top: 450px;
+  top: 55%;
   left: 825px;
 }
 
 img {
-  margin-top: 200px;
+  margin-top: 130px;
+}
+
+#head {
+  position: relative;
+  top: 150px;
+}
+
+.python-img {
+  width: 300px;
+  height: 300px;
+}
+
+.cpp-img {
+  width: 300px;
+  height: 300px;
+}
+
+.avatar-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
 }
